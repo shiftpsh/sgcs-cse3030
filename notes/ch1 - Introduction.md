@@ -84,7 +84,7 @@ PC (Program Counter)가 현재 수행할 Instruction의 메모리 주소를 저�
 Boolean Operations는 너무 trivial한 내용이라 생략. 실제 회로에서는 5V를 True, 0V를 False라고 보고
 전압이 얼마 이상이면 1, 얼마 이하면 0 같은 식으로 처리한다고 한다
 
-![Android meme](images/android.jpg)
+![Android meme](../images/android.jpg)
 
 > 회로 모양이 헷갈리면 이걸로 외우자. **And**roid 캐릭터의 머리 윗부분이 **AND** 회로 기호와 같다
 
