@@ -1,5 +1,7 @@
 <p align=right>Week 1</p>
 
+# Introduction
+
 ## Machine Language
 *Machine Instructions*으로 작성되어 있음
 - Machine Instructions: 이진수로 표현되머 컴퓨터들이 곧바로 알아들을 수 있는 인스트럭션
