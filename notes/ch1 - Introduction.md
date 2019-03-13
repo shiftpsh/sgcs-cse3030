@@ -93,4 +93,4 @@ NAND와 NOR 만으로 모든 회로를 표현할 수 있다고 해서 *Universal
 *Two Input Multiplier*: `(Y & S) | (X & ~S)`
 - S가 0이면 X를, 1이면 Y를 내보냄 (boolean 식 보면 알 수 있다)
 
-*Four Imput Multiplexer*: `(S0 & S1 & A) | (S0 & !S1 & B) | (!S0 & S1 & C) | (!S0 & !S1 & D)`
+*Four Input Multiplexer*: `(S0 & S1 & A) | (S0 & !S1 & B) | (!S0 & S1 & C) | (!S0 & !S1 & D)`
