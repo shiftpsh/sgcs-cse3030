@@ -133,3 +133,20 @@ Operand 가져오는 부분이 없고 Instruction 실행 이후에 Memory Access
 - I/O
   - *Memory mapped*: IO 작업이 메모리 주소에 매핑되어 똑같은 주소 공간을 씀, Instruction도 같다. 현재는 이게 많이 쓰인다고 
   - *IO mapped*: 메모리랑 다른 주소를 쓴다. 별도의 IO instruction을 쓴다
+  
+## How a Program Runs
+  
+1. 유저가 선택한 프로그램 이름을 shell에 보내면
+2. OS가 (현재 경로), (시스템 경로 / PATH)에서 프로그램을 찾고
+3. 있다면 디렉토리 엔트리에서 시작 클러스터(디스크의 기본 logical 단위) 주소를 가져온 후
+4. 로더가 프로그램을 로드한 후 시작한다
+5. 프로그램이 잘 실행되다가 종료되면 OS로 복귀
+
+* FAT: File Allocation Table.
+
+## Machine Instructions
+
+- 보통 8n비트로 구성되어 있다
+- 앞부분은 op-code, 뒷부분은 operand
+- Example: `1011 0000 0000 0101`에서 `1011 0000`은 op-code, `0000 0101`은 operand
+- `1011 0000`에 대응되는 어셈블리 mnemonic은 `mov` - 그냥 기억하기 편하라고 만든 코드
