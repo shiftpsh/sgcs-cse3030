@@ -7,7 +7,7 @@
 
 [![초코파이 공정](https://img.youtube.com/vi/TH-kZqIwBno/0.jpg)](https://www.youtube.com/watch?v=TH-kZqIwBno)
 
-예를 들어 공장에서 맛있는 초코파이를 만드려면
+예를 들어 공장에서 맛있는 초코파이😋를 만드려면
 
 - 빵을 굽고
 - 마시멜로를 얹고
@@ -95,4 +95,21 @@ Camera1은 pipeline을 쓰지 않는데 Camera2는 pipeline을 써서 속도 개
 |     9 |    |    |    |    |    | 4️⃣ | 3️⃣ |
 
 ## More on Memory
+
+* RAM: Random Access Memory. 어디에 저장돼 있든지 아무때나 읽을 수 있어서 Random Access다.
+Random Access가 힘든 케이스는 마그네틱 테이프 같은 게 있겠다 (특정 위치로 가려면 테이프를 돌려야 하니)
+
+| 종류 | 기능 | 속도 | 비트당 가격 | 용도 |
+| --- | --- | --- | ------- | --- |
+| DRAM (Dynamic RAM) | 액세스하지 않으면 데이터가 점차 지워짐, Refresh 필요 | 느리다 | 싸다 | 대용량 메모리 |
+| SRAM (Static RAM) | 전원을 끄지 않는 이상 데이터가 안 날아긴다 | 빠르다 | 비싸다 | Cache 메모리, ASIC에 들어가는 메모리 |
+| NVRAM (Non Volatile RAM / Flash Memory) | 전원을 꺼도 데이터가 유지된다 | ? | 비싸다 | SSD, USB 메모리 등 |
+
+* ROM: Read-Only Memory
+  * **[하드 디스크와 ROM은 상관이 없다.](https://technology.blurtit.com/182375/is-hard-disk-a-rom-or-ram)** 그냥 메모리에 쓸 수 없으면 ROM이다.
+  * PROM: Programmable ROM
+  * EPROM: Erasable ROM
+  * EEPROM: Elecrically EPROM
+  * 그냥 이런 것들이 있다는 거만 알아두자
+
 
