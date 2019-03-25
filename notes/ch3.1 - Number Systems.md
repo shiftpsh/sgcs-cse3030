@@ -28,7 +28,7 @@
 라고도 한다.
 
 ### 16진수
-0~9에다 A~F를 추가로 갖다 써서 16진수.
+0-9에다 A-F를 추가로 갖다 써서 16진수.
 
 64비트 2진수
 
@@ -42,6 +42,6 @@
 
 #### Literals
 * C에서: `0x7fff` 등 (`0x` prefix)
-* asm에서: `7fffh`, `7fffH`, `0abcdh` 등 (`h` or `H` postfix, 첫 숫자가 0~9 사이가 아니면 `0` prefix)
+* asm에서: `7fffh`, `7fffH`, `0abcdh` 등 (`h` or `H` postfix, 첫 숫자가 0-9 사이가 아니면 `0` prefix)
 
 ## Radix Conversion
