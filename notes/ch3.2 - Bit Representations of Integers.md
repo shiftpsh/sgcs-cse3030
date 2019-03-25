@@ -19,7 +19,7 @@
 * 1's complement
 * **2's complement** <- 주로 쓰임
 
-### Signed Magnitude
+## Signed Magnitude
 첫 비트(sign bit)는 부호, 두 번째부터는 절댓값(magnitude). n비트 signed magnitude 값의 범위는 -2<sup>n - 1</sup> + 1 .. 2<sup>n - 1</sup> - 1
 
 | 값 | 4비트 표현 | 값 | 4비트 표현 |
@@ -34,7 +34,7 @@
 * 0이 두 개 존재한다
 * 하드웨어로 연산 구현하기가 힘들다
 
-#### 덧셈 알고리즘
+### 덧셈 알고리즘
 뺄셈은 덧셈으로 간주 (3 - 4 = 3 + (-4))
 
 * 두 수의 부호가 같으면 그냥 더한다
@@ -44,7 +44,7 @@
 
 복잡해서 예전 시스템에밖에 안 쓰인다.
 
-### 1's complement
+## 1's complement
 첫 비트(sign bit)는 부호, 두 번째부터는 절댓값(magnitude)인데 음수일 경우 bitwise NOT이 된다.
 n비트 1's complement 값의 범위는 -2<sup>n - 1</sup> + 1 .. 2<sup>n - 1</sup> - 1
 
@@ -58,13 +58,13 @@ n비트 1's complement 값의 범위는 -2<sup>n - 1</sup> + 1 .. 2<sup>n - 1</s
 
 덜 직관적이긴 하지만 연산 구현은 Signed Magnitude보다 쉽다. 그래도 0이 두 개라는 단점이 있다.
 
-#### 덧셈 알고리즘
+### 덧셈 알고리즘
 일단 그냥 가산기로 비트끼리 더하고, 맨 왼쪽에 carry bit이 있을 경우 1을 더해 준다. 
 
 * `1 101` (-2) + `1 100` (-3) = `11 001` (-6?)
   * carry bit이 1이므로 다시 더해 주면 `1 010` (-5)
   
-### 2's complement
+## 2's complement
 첫 비트(sign bit)는 부호, 두 번째부터는 절댓값(magnitude)인데 음수일 경우 bitwise NOT 하고 더하기 1.
 n비트 2's complement 값의 범위는 -2<sup>n - 1</sup> .. 2<sup>n - 1</sup> - 1
 
@@ -79,7 +79,7 @@ n비트 2's complement 값의 범위는 -2<sup>n - 1</sup> .. 2<sup>n - 1</sup> 
 
 0이 한 개다!
 
-#### 덧셈 알고리즘
+### 덧셈 알고리즘
 그냥 가산기로 비트끼리 더하면 된다. 너무 쉽다.
 
 0이 한 개여서 -1 다음이 0이고, 그 다음이 1이기 때문이다. 1's의 경우 -1 다음이 -0, 그 다음이 +0, 그 다음이 +1이라서 carry bit을 더할 필요가
