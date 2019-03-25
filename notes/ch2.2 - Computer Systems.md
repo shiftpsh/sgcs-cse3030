@@ -112,4 +112,36 @@ Random Access가 힘든 케이스는 마그네틱 테이프 같은 게 있겠다
   * EEPROM: Elecrically EPROM
   * 그냥 이런 것들이 있다는 거만 알아두자
 
+* Single / Dual Port Memory: 이름에서 보이듯이 I/O 포트가 한 개인 메모리 / 두 개인 메모리. 당연히 포트가 두 개인 게 비싸다.. GPU 같은 데서 쓴다는 듯
 
+### Reading from Memory
+
+메모리는 CPU보다 많이 느리기 때문에 여러 머신 사이클이 필요하다
+* 주소 버스(address bus)에 읽을 메모리 주소를 집어넣고
+* RD(read) 핀의 값을 바꾸고
+* 메모리가 응답할 때까지 한 사이클 기다린 후
+* 메모리에 있는 정보를 CPU로 복사해 온다
+의 과정을 사용한다
+
+### Locality of Reference (참조 지역성)
+[동일한 값 또는 해당 값에 관계된 스토리지 위치가 자주 액세스되는 특성](https://jwprogramming.tistory.com/18). 이 블로그를 참고하면:
+
+* *Temporal* locality (시간 지역성): 최근 사용되었던 기억 장소들이 집중적으로 액세스되는 경향으로, 참조했던 메모리는 빠른 시간에 다시 참조될 확률이 높다.
+* *Spatial* locality (공간 지역성): 특성 클러스터의 기억 장소들에 대해 참조가 집중적으로 이루어지는 경향으로, 참조된 메모리 근처의 메모리를 참조할 확률이 높다.
+* *Sequential* locality (순차 지역성): 데이터가 순차적으로 액세스되는 경향으로, 프로그램 내의 명령어가 순차적으로 구성되어 있다는 것이 대표적인 경우이다. 공간 지역성에 편입되어 설명되기도 한다고 한다.
+
+*90/10 Rule*: 프로그램은 실행 시간의 90%를 10%의 코드를 작동시키는 데 할애한다는 법칙
+
+### Cache Memory
+비싸고 빠른 RAM, CPU 안에 있을 수도 있고 밖에 있을 수도 있다
+* Level-1(L1) Cache: CPU 안에
+* Level-2(L2) Cache: CPU 밖에
+
+이런 용어도 쓰인다
+* Cache hit: 읽으려는 데이터가 캐시 안에 존재
+* Cache miss: 읽으려는 데이터가 캐시에 없음
+
+## Multitasking
+Multitasking = Rapid switching of tasks. 여러 작업을 **실제로 동시에 실행하는 것이 아니고**, 현재 처리 중인 작업을 빨리빨리 바꾸면서 동시에 실행되는 것처럼 눈속임? 하는 것
+
+* VLIW(Very Large Instruction Word) Processor: 하나의 작업이 동시에 해도 괜찮은 작은 독립된 작업들로 이루어져 있다. 멀티미디어 프로세싱에 적합.
