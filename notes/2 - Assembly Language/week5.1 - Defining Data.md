@@ -254,4 +254,4 @@ listSize = ($ - list) / 4
 
 * | 어셈블 전                                                    | 어셈블 후                                                    |
   | ------------------------------------------------------------ | ------------------------------------------------------------ |
-  | `.data`<br />D1<br />`.code`<br />C1<br />`.data?`<br />D1?<br /><br />`.data`<br />D2<br />`.code`<br />C2 | `.data`<br />D1<br />D2<br />`.data?`<br />D1?<br />`.code`<br />C1<br />C2 |
+  | `.data`<br />D1<br />`.code`<br />C1<br />`.data?`<br />D1?<br />`.data`<br />D2<br />`.code`<br />C2 | `.data`<br />D1<br />D2<br />`.data?`<br />D1?<br />`.code`<br />C1<br />C2 |
