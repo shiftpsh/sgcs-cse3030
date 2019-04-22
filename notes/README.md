@@ -1,5 +1,7 @@
 # Lecture Notes
 
+강의 정리 노트. 강의를 듣고 매주 복습하면서 정리한 노트입니다. 배운 순서이며 교재의 목차와는 크게 관련없습니다.
+
 ## Computer Architecture
 
 **Week 1**
@@ -72,3 +74,8 @@
     * Defining Bytes, Strings, Uninitialized Data
     * Symbolic Constants - EQU, TEXTEQU, Current Location Counter Directive
   * Assembley Source File Structure
+
+* [Data Transfer Instructions](/notes/2%20-%20Assembly%20Language/week5.2%20-%20Data%20Transfer%20Instructions.md)
+  * Operand Types
+  * MOV instruction - mov, movzx, movsx
+  * XCHG instruction
