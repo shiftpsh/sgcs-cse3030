@@ -33,7 +33,7 @@ mov     al,      ValS    ; ValS : memory operand
   * Indirect
   * Indexed
 
-## MOV instruction
+## MOV Instruction
 
 값을 이동하는 instruction. Syntax: `mov [destination], [source]`
 
@@ -65,7 +65,7 @@ mov     bVal2,  bVal    ; error: no more than 1 memory operand
 * **movzx**: 0-extend 해서 작은 쪽에서 큰 쪽으로 옮긴다. 예를 들어 `10001111`을 `WORD` 크기의 메모리로 옮기면 `0000000010001111`
 * **movsx**: sign extend 한다. 예를 들어 `10001111`을 `WORD` 크기의 메모리로 옮기면 `1111111110001111`
 
-## XCHG instruction
+## XCHG Instruction
 
 두 값을 바꾸는 instruction. mov의 제약조건을 그대로 따르나
 

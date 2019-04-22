@@ -77,5 +77,17 @@
 
 * [Data Transfer Instructions](/notes/2%20-%20Assembly%20Language/week5.2%20-%20Data%20Transfer%20Instructions.md)
   * Operand Types
-  * MOV instruction - mov, movzx, movsx
-  * XCHG instruction
+  * MOV Instruction - mov, movzx, movsx
+  * XCHG Instruction
+
+Week 6
+
+* 실습 1
+
+**Week 7**
+
+* [Arithmetic Instructions](/notes/2%20-%20Assembly%20Language/week7.1%20-%20Arithmetic%20Instructions.md)
+  * INC and DEC Instructions
+  * ADD and SUB Instructions
+  * NEG Instruction
+  * Arithmetic Expressions
