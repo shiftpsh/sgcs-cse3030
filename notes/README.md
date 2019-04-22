@@ -91,3 +91,10 @@ Week 6
   * ADD and SUB Instructions
   * NEG Instruction
   * Arithmetic Expressions
+* [Flags](/notes/2%20-%20Assembly%20Language/week7.2%20-%20Flags.md)
+  * Flags Affected by Arithmetic
+  * ZF: Zero Flag
+  * SF: Sign Flag
+  * Overflow Detection (in unsigned & signed)
+  * CF, OF: Carry Flag and Overflow Flag
+  * Flags Affected by Instructions
