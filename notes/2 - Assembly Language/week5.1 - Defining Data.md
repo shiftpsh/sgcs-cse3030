@@ -246,7 +246,7 @@ listSize = ($ - list) / 4
 * 차이는 항상 바이트 단위이다
 * constant expression이다 (어셈블러가 계산)
 
-### Assembley Source File Structure
+## Assembley Source File Structure
 
 소스 코드에는 `.data`, `.data?`, `.code`를 섞어 써도 관계없다
 

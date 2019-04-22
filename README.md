@@ -1,2 +1,8 @@
-# sgcs-cse3030
-Assembly Programming
+# 어셈블리 프로그래밍
+CSE3030 - Assembly Programming
+
+2019년 1학기 / 임종석 교수님
+
+* 컴퓨터 아키텍쳐를 간단하게 배우고, x86 MASM 스타일 어셈블리 언어에 대해 배웁니다.
+* [강의 정리 노트](/notes)
+
