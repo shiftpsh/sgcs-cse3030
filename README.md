@@ -8,3 +8,4 @@ CSE3030 - Assembly Programming
 * [과제](/homework)
 * [기말시험 코드](/final) - 1번째 문제 테스트케이스 3개 중 1개 오답, 나머지는 정답
 
+모든 코드는 `Irvine32.inc`에 의존하고 있습니다. 
