@@ -73,7 +73,7 @@ S = R = 0일 경우 현재 값이 유지된다. 근데 S = R = 1일 경우 Q = 0
 
 Flip Flop들 여러 개 붙여 놓은 거. 속도가 엄청 빠르다.
 
-*m-bit register*는 *m* 비트의 정보를 담음, 플립플롭처럼 D Q R EN CLK가 있다. D랑 Q는 각각 *m*개 비트로 이루어져 있가
+*m-bit register*는 *m* 비트의 정보를 담음, 플립플롭처럼 D Q R EN CLK가 있다. D랑 Q는 각각 *m*개 비트로 이루어져 있다
 
 *Register file*: register들 여러 개 붙여 놓은 거. 비싸다! D Q R EN CLK에 추가로 ADDRESS가 있다. 어디에다 저장하고 어디에서 읽어야 할지 알아야 하니까
 
